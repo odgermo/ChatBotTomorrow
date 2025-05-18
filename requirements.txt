@@ -4,4 +4,5 @@ google.generativeai
 langchain_google_genai
 langchain_core
 langchain
-langchain.document_loaders
+
+langchain_community
