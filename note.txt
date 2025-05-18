@@ -1,0 +1,9 @@
+creation dde l'environnement 
+python -m venv env
+
+activation 
+
+env\scripts\activate
+
+
+installation ddes bibliotheques
