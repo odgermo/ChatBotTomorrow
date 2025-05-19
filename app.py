@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st 
 import os
 from dotenv import load_dotenv
 import google.generativeai as genai
@@ -20,8 +20,8 @@ history = []
 
 #INTERFACE STREAMLIT
 
-st.set_page_config(page_title="Chatbot PDF Dossier", layout="centered")
-st.title("🤖 Chatbot PDF pour Dossier d'Appel d'Offre")
+st.set_page_config(page_title=" Tomorrow's Chatbot", layout="centered")
+st.title("🤖 Tomorrow's Chatbot")
 
 # API Key
 api_key = api_key
@@ -49,6 +49,8 @@ if uploaded_files:
         pdf_text = "\n".join([doc.page_content for doc in docs])
         texts.append(pdf_text)
         os.unlink(tmp_path)  # Nettoyage
+
+
 
     # Stocker tout le contenu
     st.session_state.pdf_text = "\n\n".join(texts)
